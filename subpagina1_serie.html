@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mad Men | Archivo Creativo: Merch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+<!-- Acerca de nosotros -->
+  <section>
+    <nav class="navbar1">
+     <a class="text_navbar2" href="index.html">MAD MEN: ARCHIVO CREATIVO</a>
+     <a class="text_navbar1" onclick="togglePopup()" >Acerca de nosotros</a>
+     
+    </nav>
+  </section>
+
+<!-- Pop-up HTML -->
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="togglePopup()">&times;</span>
+    <p>Mad Men | Archivo creativo es un proyecto realizado para el curso de Producción Digital II en la Universidad de Palermo en 2023</p>
+  </div>
+</div>
+
+<!-- menu -->
+
+
+    <div class="menudesecciones">
+      <a class="navbar-button" href="./subpagina1_serie.html">LA SERIE</a>
+      <a class="navbar-button" href="./subpagina2_textos.html">TEXTOS</a>
+      <a class="navbar-button" href="./subpagina3_mediateca.html">MEDIATECA</a>
+      <a class="navbar-button" href="./subpagina4_merch.html">MERCH</a>
+    </div>
+  </section>
+  
+  <div class="navbarm1">
+    <button id="toggleBtn">Mad Men | Archivo creativo</button>
+  </div>
+  <div class="menum">
+    <a class="menum1" href="/subpagina1_serie.html">LA SERIE</a>
+    <a class="menum2" href="/subpagina2_textos.html">TEXTOS</a>
+    <a class="menum3" href="/subpagina3_mediateca.html">MEDIATECA</a>
+    <a class="menum4" href="/subpagina4_merch.html">MERCH</a>
+  </div>
+  
+
+  <!-- título -->
+  <section>
+    <div class="maintext">
+    LA SERIE
+    </div>
+</section>
+
+  <!-- fondo -->
+<div class="fondo1">
+
+  <!-- la serie desktop -->
+  <div class="fade-in serie">
+    <img class="imgserie" alt="Mad Men 1" src="images/madmen1.jpg">
+    <div style="margin: 5%;"></div>
+    <div class="textoserie1" style="margin-top: -20%;">Mad Men es una serie dramática ambientada en los años 60 que sigue las vidas de los empleados de una prestigiosa agencia de publicidad de Nueva York, Sterling Cooper, y sus posteriores encarnaciones. </div>
+   
+</div>
+
+  <div class="serie" style="margin-top: -5%;">
+    <div class="textoserie1" style="margin-top: 15%;">La serie explora los cambios sociales y culturales de la época, como los roles de género, las relaciones raciales y el auge de la cultura de consumo.  </div>
+    <div style="margin: 5%;"></div>
+    <img class="imgserie" alt="Mad Men 1" src="images/madmen2.webp" style="margin-top: -10%;">
+  </div>
+ 
+
+  <div class="serie" style="margin-top: -2%;">
+    <img class="imgserie" alt="Mad Men 1" src="images/madmen3.jpg">
+    <div style="margin: 5%;"></div>
+    <div class="textoserie1" style="margin-top: 20%;">Mad Men es una serie dramática ambientada en los años 60 que sigue las vidas de los empleados de una prestigiosa agencia de publicidad de Nueva York, Sterling Cooper, y sus posteriores encarnaciones. </div>
+   
+</div>
+<div style="margin: 5%;"></div>
+</div>
+
+  <!-- fondo -->
+  <div class="fondo2">
+
+  <!-- la serie mobile-->
+  <div class="fade-in seriem">
+    <img class="fade-in imgseriem" alt="Mad Men 1" src="images/madmen1.jpg" style="margin-left: 5%;">
+    <div style="margin: 8%;"></div>
+    <div class="textoserie1m">Mad Men es una serie dramática ambientada en los años 60 que sigue las vidas de los empleados de una prestigiosa agencia de publicidad de Nueva York, Sterling Cooper, y sus posteriores encarnaciones. </div>
+    <div style="margin: 8%;"></div>s
+</div>
+
+  <div class="fade-in seriem" >
+    <img class="fade-in imgseriem" alt="Mad Men 1" src="images/madmen2.webp" style="margin-left: 5%;">
+     <div style="margin: 8%;"></div>
+     <div class="textoserie1m" >La serie explora los cambios sociales y culturales de la época, como los roles de género, las relaciones raciales y el auge de la cultura de consumo.  </div>
+    
+  </div>
+ 
+
+  <div class="fade-in seriem" >
+    <img class="fade-in imgseriem" alt="Mad Men 1" src="images/madmen3.jpg" style="margin-left: 5%;">
+    <div style="margin: 8%;"></div>
+    <div class="textoserie1m">Mad Men es una serie dramática ambientada en los años 60 que sigue las vidas de los empleados de una prestigiosa agencia de publicidad de Nueva York, Sterling Cooper, y sus posteriores encarnaciones. </div>
+   
+</div>
+<div style="margin: 8%;"></div>
+</div>
+
+<!-- Footer -->
+<section>
+  <div class="footer">
+      <h6>© Mad Men es propiedad de AMC. Todos los derechos de los diferentes elementos en esta web pertenecen a sus respectivos autores.</h6>
+  </div>
+</section>
+
+
+<style>
+
+@media screen and (max-width: 1000px) {
+  .serie {   
+    flex-direction: column;
+  }
+  .imgserie .textoserie1 {
+    margin:none}
+}
+
+</style>
+<script>
+  function togglePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = (popup.style.display === "none") ? "block" : "none";
+  }
+
+  const toggleBtn = document.getElementById("toggleBtn");
+    const menu = document.querySelector(".menum");
+
+    toggleBtn.addEventListener("click", function() {
+      menu.classList.toggle("open");
+      if (menu.classList.contains("open")) {
+        // Menu is open, slide it down
+        menu.style.transform = "translateY(0)";
+      } else {
+        // Menu is closed, slide it back up
+        menu.style.transform = "translateY(-100%)";
+        menu.addEventListener("animationend", function() {
+          menu.style.transform = "";
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

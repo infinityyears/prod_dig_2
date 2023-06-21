@@ -1,0 +1,1117 @@
+* {
+  box-sizing: border-box;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #32312b5e;
+  z-index: 9999;
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  width: 700px;
+  height: 500px;
+  text-align: center;
+  justify-content: center;
+  font-family: "Miramar";
+  font-size: larger;
+  color: #32312b;
+  font-size: 40px;
+  background-color: #e2e3d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color:#e2e3d5; 
+  height: 100%;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Menu Acerca de nosotros */
+.navbar1 {
+  padding: 8px;
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+}
+
+.text_navbar1 {
+  align-content: right;
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+}
+
+.text_navbar1:hover {
+  text-decoration: underline;
+}
+
+/* Color de navbar de páginas */
+.navbar2 {
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+}
+
+/* Main */
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  text-align: center;
+
+}
+/* Texto de Main */
+.maintextmain {
+  font-family: 'optididotcbsspecial';
+  text-align: center;
+  color: #32312b;
+  font-size: 8vw;
+  margin: 20px;
+  overflow: hidden; /* Ensures the text is clipped */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Centers the text container */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3s steps(40, end);
+}
+
+/* Texto de Main */
+.maintextmain2 {
+  font-family: 'optididotcbsspecial';
+  text-align: center;
+  color: #32312b;
+  font-size: 4vw;
+  margin: 20px;
+  overflow: hidden; /* Ensures the text is clipped */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: 0 auto; /* Centers the text container */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3s steps(40, end);
+}
+
+/* animacións typewriter */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Texto de Main*/
+.maintext{
+  font-family: 'optididotcbsspecial';
+  font-size:100px;
+  text-align:left;
+  color: #32312b;
+  overflow: hidden; /* Ensures the text is clipped */
+  white-space: nowrap; /* Keeps the text on a single line */
+  margin: auto; /* Centers the text container */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 2s steps(40, end);
+  margin-left: 25px;
+}
+
+
+.maintext2 {
+  font-family: 'miramar';
+  text-align: center;
+  color: #32312b;
+  font-size: 25px;
+  margin: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .maintext {   
+    font-size: 12vw;
+    
+  }
+  .main{
+    height: 70vh;
+  }
+
+  .maintextmain{
+    font-size: 11vw
+  }
+}
+
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+/* Botón : LA SERIE */
+.menu1 {
+  background-color: #a7215c; 
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  color: #e2e3d5;
+  padding: 10px;
+  font-family: 'optididotcbsspecial' ;
+  min-width: 304px;
+}
+
+.menu1:hover {
+  text-decoration: underline;
+}
+
+/* Botón : TEXTOS */
+.menu2 {
+  background-color: #005f9f; 
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  color: #e2e3d5;
+  padding: 10px;
+  font-family: 'optididotcbsspecial' ;
+  min-width: 304px;
+}
+
+.menu2:hover {
+  text-decoration: underline;
+}
+
+/* Botón : MEDIATECA */
+.menu3 {
+  background-color: #024f47; 
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  color: #e2e3d5;
+  padding: 10px;
+  font-family: 'optididotcbsspecial' ;
+  min-width: 304px;
+}
+
+.menu3:hover {
+  text-decoration: underline;
+}
+
+/* Botón : MERCH */
+.menu4 {
+  background-color: #cf6437; 
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  padding: 10px;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial' ;
+  min-width: 304px;
+}
+
+.menu4:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+/* Título de subpaginas */
+.titulosub {
+  justify-content: right;
+  align-content: right;
+  font-size: 100px;
+  font-family: 'optididotcbsspecial';
+  background-color: #e2e3d5;
+  color: #32312b;
+  margin-left: 5%;
+  margin-top: 0%;
+
+}
+
+/* Menu principal en subpáginas con hover */
+
+.menuh{
+  display: flex;
+  font-family: 'optididotcbsspecial';
+  background-color: #e2e3d5;
+  color: #32312b;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-grow: initial;
+  justify-content:center ;
+  align-content: center;
+  color: #e2e3d5;
+  font-family: 'opti_didot_cbsspecial'; 
+  text-decoration: none;
+}
+
+/*  Estilo de los links */
+a:hover{
+  text-decoration: none;
+  color: #e2e3d5;
+
+}
+
+/*  Estilo del menu de las páginas alternas */
+.menudesecciones {
+  display: flex;
+  height: 50px;
+}
+
+.navbar-button {
+  flex-grow: 1;
+  height: 100%;
+  transition: transform 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  transform: translateY(-100%);
+  z-index: 2;
+  margin-top: 1%;
+}
+
+.navbar-button:nth-child(1) {
+  background-color: #a7215c;
+}
+
+.navbar-button:nth-child(2) {
+  background-color: #005f9f;
+}
+
+.navbar-button:nth-child(3) {
+  background-color: #024f47;
+}
+
+.navbar-button:nth-child(4) {
+  background-color: orange;
+}
+
+.navbar-button:hover {
+  transform: translateY(0);
+}
+
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Menu Acerca de nosotros en paginas */
+.navbar1 {
+  padding: 4px;
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+  z-index: 900;
+  position: sticky;
+  top: 0;
+  display: flex; /* Add display flex to align items in a row */
+  justify-content: space-between; /* Add space between the two texts */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.text_navbar1,
+.text_navbar2 {
+  height: 30px; /* Adjust the height as needed */
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+  font-size: 16px;
+  display: flex; /* Add display flex to vertically center text */
+  align-items: center; /* Vertically center text */
+  flex-grow: 1; /* Allow each text to grow and occupy remaining space */
+  cursor: pointer;
+}
+
+.text_navbar1 {
+  justify-content: flex-end; /* Align text to the right */
+}
+
+.text_navbar2 {
+  justify-content: flex-start; /* Align text to the left */
+}
+
+.text_navbar1:hover {
+  text-decoration: underline;
+}
+
+.text_navbar2:hover {
+  text-decoration: underline;
+}
+
+/* Color de navbar de páginas */
+.navbar2 {
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+}
+
+/* Menu mobile de navbar de páginas */
+.menum1, .menum2, .menum3, .menum4 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-size: 40px;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+  width: 100vw;
+  padding: 2%;
+}
+
+.menum1 {
+  background-color: #a7215c;
+}
+
+.menum2 {
+  background-color: #005f9f;
+}
+
+.menum3 {
+  background-color: #024f47;
+}
+
+.menum4 {
+  background-color: #cf6437;
+}
+
+.menum1:hover,
+.menum2:hover,
+.menum3:hover,
+.menum4:hover {
+  text-decoration: underline;
+}
+
+.navbarm1, .text_navbarm1, .navbarm2 {
+  background-color: #32312b;
+  color: #e2e3d5;
+  font-family: 'optididotcbsspecial';
+}
+
+.navbarm1 {
+  padding: 8px;
+  text-align: center;
+  z-index: 1000;
+  position: relative;
+  display: none;
+}
+
+.navbarm1 button {
+  text-decoration: none;
+}
+
+.navbarm1 button:hover {
+  text-decoration: underline;
+}
+
+.text_navbarm1 {
+  align-content: right;
+}
+
+.text_navbarm1:hover {
+  text-decoration: underline;
+}
+
+.navbarm2 {
+  background-color: #32312b;
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .navbarm1 {
+    display: block;
+  }
+}
+
+.menum {
+  background-color: #e2e3d5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 0;
+  overflow: hidden;
+  z-index: 9;
+  position: absolute;
+  transform: translateY(-100%);
+  width: 100vw;
+  left: 0;
+  display: none;
+  margin-top: 30px;
+
+}
+
+/* Responsive */
+@media screen and (max-width: 1000px) {
+  .menum {
+    display: block;
+  }
+}
+
+.menum.open {
+  height: auto;
+  transform: translateY(0);
+  animation: slideDown 0.3s ease-in-out; /* Add slideDown animation */
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+button#toggleBtn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.toggleBtn {
+  justify-content: center;
+  align-self: center;
+}
+
+.toggleBtn:hover {
+  text-decoration: underline;
+}
+
+
+/* Título de página*/
+.mainsecciones{
+
+  display: flex;
+  font-family: 'optididotcbsspecial';
+  background-color: #e2e3d5;
+  color: #32312b;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-flow:wrap;
+  flex-grow: initial;
+  justify-content:left ;
+  align-content: left;
+  color: #e2e3d5;
+}
+
+@media screen and (max-width: 1000px) {
+  .mainsecciones {
+    justify-content: center;
+    align-content: center;
+  }
+
+  
+}
+
+
+/* Texto de Main secciones*/
+.maintextsecciones{
+  font-family: 'optididotcbsspecial';
+  font-size:80px;
+  text-align:left;
+  color: #32312b;
+  margin-left: 40px;
+}
+
+
+/*  Estilo de los links */
+a:hover{
+  text-decoration: none;
+  color: #e2e3d5;
+
+}
+
+/*  Estilo del menu de las páginas alternas */
+
+
+  .menudesecciones {
+    display: flex;
+    height: 60px;
+    z-index: 1;
+    position: sticky;
+    top: 0;
+
+  }
+
+  .navbar-button {
+    flex-grow: 1;
+    height: 100%;
+    transition: transform 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: transparent; /* Set initial font color as transparent */
+    cursor: pointer;
+    transform: translateY(-100%);
+    margin-top: 0.5%;
+    position: relative;
+  }
+
+  .navbar-button:nth-child(1) {
+    background-color: #a7215c;
+    font-family: 'optididotcbsspecial';
+    position: relative;
+  }
+
+  .navbar-button:nth-child(2) {
+    background-color: #005f9f;
+    font-family: 'optididotcbsspecial';
+    position: relative;
+  }
+
+  .navbar-button:nth-child(3) {
+    background-color: #024f47;
+    font-family: 'optididotcbsspecial';
+    position: relative;
+  }
+
+  .navbar-button:nth-child(4) {
+    background-color: #cf6437;
+    font-family: 'optididotcbsspecial';
+    position: relative;
+  }
+
+  .navbar-button:hover {
+    transform: translateY(-18%);
+    color: #e2e3d5; /* Set the desired font color on hover */
+  }
+
+  /*  Cards Merch */
+.card-body {
+background-color: #005f9f;
+
+}
+
+.card-title {
+  font-family: 'miramarregular';
+  color: #e2e3d5;
+  font-size: 4vw;
+  justify-content: center;
+
+}
+
+.card-text{
+  font-family: 'miramarregular';
+  color:#e2e3d5;
+  margin-bottom: 60px;
+  font-size: 2vw;
+}
+.card-text2{
+  font-family: 'miramarregular';
+  color:#e2e3d5;
+  margin-top: 20px;
+  font-size: 2.3vw;
+
+}
+
+.btn{
+  background-color: #a7215c;
+  font-family: 'optididotcbsspecial' ;
+  font-weight: bold;
+  color: #e2e3d5;
+  margin-left: 10%;
+  box-shadow: 0px 3px 3px #00000069;
+
+}
+
+.sharp-corner{
+  border-radius: 0;
+}
+
+/* animacion de float */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  
+}
+
+/* seccion textos */
+.rectangle {
+font-family: 'miramarregular';
+color: #e2e3d5;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 40px;
+width: 100%;
+margin-left: 20px ;
+}
+
+.rectangle2 {
+font-family: 'miramarregular';
+color: #e2e3d5;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-right: 20px;
+padding: 40px;
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+}
+
+.rectangle_text{
+font-family: 'miramarregular';
+color:#e2e3d5;
+font-size: 2vw;
+height: 100%;
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+}
+
+.rectangle_text:hover {
+text-decoration: underline;
+}
+
+
+.rectangle_text2{
+font-family: 'miramarregular';
+color:#e2e3d5;
+height: 100%;
+display: flex;
+align-items: center;
+font-size: 1.5vw;
+}
+
+
+.rectangle,
+.rectangle2 {
+flex-grow: 1;
+}
+
+.rectangle, .rectangle2 {
+transition: transform 0.3s;
+}
+
+.rectangle:hover {
+transform: scale(1.05);;
+z-index: 400
+}
+
+.rectangle2:hover {
+transform: scale(1.04);
+z-index: 400;
+
+}
+
+
+/*  seccion mediateca  */
+
+
+.section-container {
+display: flex;
+flex-direction: row;
+}
+
+.section {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: space-between;
+margin-bottom: 20px;
+max-height: 500px;
+margin: 30px; /
+}
+
+.image {
+flex: 1;
+max-height: 90%;
+max-width: 50%;
+margin-left: 20px;
+object-fit: contain;
+transition: transform 0.3s; 
+cursor: pointer; 
+}
+
+.image:hover {
+transform: scale(1.05); 
+}
+
+.content {
+flex: 1;
+padding: 0 20px;
+justify-content: center;
+align-content: center;
+width: 50%;
+margin-left: 10px;
+
+}
+
+.title {
+font-size: 3vw;
+font-weight: bold;
+margin-bottom: 10px;
+font-family: 'miramar';
+color: #e2e3d5;
+}
+
+.description {
+font-size: 16px;
+font-family: 'miramar';
+color: #e2e3d5;
+}
+
+.fullscreen-image {
+position: fixed;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(0, 0, 0, 0.8);
+display: none;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+}
+
+.fullscreen-image img {
+max-width: 90%;
+max-height: 90%;
+object-fit: contain;
+}
+
+
+
+.row {
+display: flex;
+flex-wrap: wrap;
+align-items: stretch;
+
+}
+
+@media screen and (max-width: 1000px) {
+  .section-container {   
+    flex-direction: column;
+  }
+  .section{
+    min-height: 400px;
+  }
+}
+
+/* responsive de seccion textos */
+@media screen and (max-width: 1000px) {
+.rectangle, .rectangle2 {   
+  margin: 0;
+}
+
+.rectangle2 {
+
+  margin-bottom: 20px;
+  position: initial;
+  top: initial;
+  bottom: initial;
+  right: initial;
+  left: initial;
+}
+
+
+.rectangle_text, .rectangle_text2 {   
+
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.rectangle_text{
+font-size: 5vw;
+
+}
+
+.rectangle_text2{
+  font-size: 3vw;
+
+  }
+}
+
+.btn{
+background-color: #a7215c;
+font-family: 'optididotcbsspecial' ;
+font-weight: bold;
+color: #e2e3d5;
+margin-left: 10%;
+box-shadow: 0px 3px 3px #00000069;
+
+}
+
+.btn:hover{
+  text-decoration: underline;
+  color:#e2e3d5
+}
+
+.sharp-corner{
+border-radius: 0;
+}
+
+/* Fondo sección la serie */
+
+.fondo1 {
+  background-image: url('./fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+  height: fit-content;
+}
+
+.fondo2 {
+  background-image: url('./fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  height: fit-content;
+}
+
+/* sección la serie */
+
+.serie {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5%;
+}
+
+.imgserie {
+  max-width: 41%;
+  height: auto;
+  max-height: 800px;
+}
+
+.textoserie1 {
+  text-align: center;
+  color: #e2e3d5;
+  font-family: 'miramarregular1';
+  max-width: 40%;
+  font-size: 2.5vw;
+}
+
+/* sección la serie  mobile*/
+
+.seriem {
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.imgseriem {
+  max-width: 70%;
+  max-height: 500px;
+}
+
+.textoserie1m {
+  text-align: right;
+  color: #e2e3d5;
+  font-family: 'miramarregular1';
+  max-width: 70%;
+  font-size: 4.5vw;
+  margin: auto;
+  margin-right: 10%;
+}
+
+@media screen and (max-width: 1000px) {
+  .fondo1  {   
+    display: none;
+  }
+  .seriem {
+    display: block;
+  
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .fondo1  {   
+    display: block;
+  }
+  .fondo2 {
+    display: none;
+  
+  }
+
+}
+
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 2s; /* Adjust as needed */
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* footer */
+
+.bottomsection{
+bottom:0; 
+width: 100%;
+position: fixed;
+
+}
+
+
+
+
+.footer {
+  font-family: 'miramarregularl';
+  padding: 8px;
+  color: #e2e3d5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background: #32312b;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+
+.floating-card {
+  animation: floatAnimation 3s infinite;
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+    .menudesecciones, .navbar1 {
+      display: none;
+    }
+    .maintext{
+      margin: 0px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+
+@font-face {
+  font-family: 'optididotcbsspecial';
+  src: url('optididotcbs-special-webfont.woff2') format('woff2'),
+       url('optididotcbs-special-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'MIRAMAR';
+  src: url('Miramar_Regular.ttf') format('TTF'),;
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'miramarregularl';
+  src: url('miramar_regular-webfont.woff2') format('woff2'),
+       url('miramar_regular-webfont.woff') format('woff');
+  font-weight: lighter;
+  font-style: normal;
+
+}
+
+
+
